@@ -58,7 +58,7 @@ Responsável por manter o sistema atualizado, adicionando ou gerenciando informa
 | <Felipe Leite Conrado> | <0030482511011> |
 | <Ricardo Akimoto> | <RA> |
 | <André> | <RA> |
-| <Kevin> | <RA>
+| <Kevin> | <RA> |
 
 ---
 
