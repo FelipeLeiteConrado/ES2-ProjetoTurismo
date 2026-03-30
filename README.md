@@ -1,6 +1,6 @@
 # <NOME_DO_PROJETO>
 
-## 📌 Resumo
+## Descrição
 
 Este aplicativo tem como objetivo funcionar como um **guia turístico digital**, ajudando usuários a descobrir e explorar destinos.  
 A plataforma fornecerá informações relevantes para viajantes, como:
@@ -14,7 +14,7 @@ O objetivo é **facilitar a exploração de cidades e melhorar a experiência de
 
 ---
 
-## 👤 Personas
+## Personas
 
 ### Turista
 Pessoa visitando uma cidade ou região que deseja descobrir lugares interessantes para visitar, comer ou explorar.
@@ -27,7 +27,7 @@ Responsável por manter o sistema atualizado, adicionando ou gerenciando informa
 
 ---
 
-## ⚠️ Principais Dores
+## Principais Dores
 
 - Dificuldade em encontrar **pontos turísticos relevantes próximos**
 - Falta de informações organizadas sobre **lugares para comer ou visitar**
@@ -89,8 +89,8 @@ Responsável por manter o sistema atualizado, adicionando ou gerenciando informa
 
 ---
 
-## 1. ✅ Requisitos Funcionais (Detalhados)
-### 🔥 Alta Prioridade
+## 1. Requisitos Funcionais (Detalhados)
+### Alta Prioridade
 
 RF01 – Pesquisa de locais
 O sistema deve permitir ao usuário pesquisar locais por nome, categoria ou localização atual, retornando resultados relevantes com base na consulta.
@@ -128,7 +128,7 @@ O sistema deve permitir que a interface seja exibida em diferentes idiomas.
 RF17 – Tradução automática
 O sistema deve traduzir automaticamente conteúdos relevantes para o idioma do usuário.
 
-### ⚖️ Média Prioridade
+### Média Prioridade
 
 RF02 – Listagem categorizada
 O sistema deve organizar os locais em categorias como turismo, alimentação e experiências.
@@ -157,7 +157,7 @@ O sistema deve permitir salvar rotas geradas para reutilização futura.
 RF22 – Rotas seguras
 O sistema deve priorizar rotas consideradas seguras, especialmente para turistas estrangeiros.
 
-### 🧊 Baixa Prioridade
+### Baixa Prioridade
 
 RF21 – Atualização de localização
 O sistema deve atualizar automaticamente a localização do usuário em tempo real, mediante consentimento.
@@ -168,8 +168,8 @@ O sistema deve apresentar locais selecionados com base em curadoria especializad
 RF24 – Avaliações detalhadas
 O sistema deve permitir diferenciação entre avaliações rápidas (nota) e avaliações detalhadas (comentários estruturados).
 
-## 2. ⚙️ Requisitos Não Funcionais (Detalhados)
-### 🔥 Alta Prioridade
+## 2. Requisitos Não Funcionais (Detalhados)
+### Alta Prioridade
 
 RNF01 – Desempenho de busca
 O sistema deve retornar resultados de busca em até 2 segundos após a solicitação do usuário.
@@ -207,7 +207,7 @@ RNF15 – Integração externa
 O sistema deve integrar-se com APIs externas de mapas, localização e tradução.
 (Categoria: Integração)
 
-### ⚖️ Média Prioridade
+### Média Prioridade
 
 RNF04 – Escalabilidade
 O sistema deve suportar ao menos 10.000 usuários simultâneos sem degradação significativa.
@@ -233,13 +233,13 @@ RNF14 – Manutenibilidade
 O sistema deve possuir arquitetura desacoplada para facilitar manutenção e evolução.
 (Categoria: Manutenibilidade)
 
-### 🧊 Baixa Prioridade
+### Baixa Prioridade
 
 (Nenhum requisito crítico adicional nesta categoria)
 
 ---
 
-## 🛠 Tecnologias
+## Tecnologias
 
 > *Lista inicial de tecnologias do projeto*
 
@@ -251,7 +251,7 @@ O sistema deve possuir arquitetura desacoplada para facilitar manutenção e evo
 
 ---
 
-## 👥 Membros
+## Membros
 
 | Nome | RA |
 |------|------|
