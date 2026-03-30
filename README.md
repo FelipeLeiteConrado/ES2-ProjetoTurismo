@@ -2,8 +2,6 @@
 
 ## 📌 Resumo
 
-<Descrição breve do projeto>
-
 Este aplicativo tem como objetivo funcionar como um **guia turístico digital**, ajudando usuários a descobrir e explorar destinos.  
 A plataforma fornecerá informações relevantes para viajantes, como:
 
@@ -261,9 +259,3 @@ O sistema deve possuir arquitetura desacoplada para facilitar manutenção e evo
 | Ricardo Akimoto | 0030482511031 | 
 | André | 0030482421043 |
 | Kevin | 0030482421034 |
-
----
-
-## 📄 Licença
-
-<Definir licença do projeto>
