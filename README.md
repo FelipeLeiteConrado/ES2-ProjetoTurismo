@@ -3,6 +3,11 @@
   Guia turístico digital para explorar cidades de forma inteligente
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue"/>
+  <img src="https://img.shields.io/badge/status-desenvolvimento-yellow"/>
+</p>
+
 ---
 
 ## 📚 Navegação
