@@ -46,9 +46,9 @@ A plataforma fornece:
 
 ## 👤 Personas
 
-- **Turista** → Quer explorar uma cidade nova  
-- **Morador Local** → Quer descobrir novos lugares  
-- **Administrador** → Gerencia dados da plataforma  
+- [Lucas Silva](https://github.com/user-attachments/files/26352446/Lucas.Silva.pdf) → Aventureiro 
+- [Marina Costa](https://github.com/user-attachments/files/26352473/Marina.Costa.pdf) → Turista Prático 
+- [John Miller](https://github.com/user-attachments/files/26352491/John.Miller.pdf) → Turista Internacional
 
 ---
 
