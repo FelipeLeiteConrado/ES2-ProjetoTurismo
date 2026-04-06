@@ -76,5 +76,5 @@ A plataforma fornece:
 |--------------------------|----------------|
 | Felipe Leite Conrado     | 0030482511011  |
 | Ricardo Akimoto          | 0030482511031  |
-| André                    | 0030482421043  |
+| André Machado Antonio    | 0030482421043  |
 | Kevin                    | 0030482421034  |
