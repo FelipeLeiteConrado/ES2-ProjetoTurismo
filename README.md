@@ -70,6 +70,12 @@ A plataforma fornece:
 
 ---
 
+## Casos de uso
+
+👉 [Ver casos de uso](./docs/casos-de-uso.md)
+
+---
+
 ## 👥 Equipe
 
 | Nome                     | RA             |
