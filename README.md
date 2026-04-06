@@ -76,6 +76,12 @@ A plataforma fornece:
 
 ---
 
+## 📱 Protótipo
+
+👉 [Ver protótipo](./docs/Protótipo.md)
+
+---
+
 ## 👥 Equipe
 
 | Nome                     | RA             |
