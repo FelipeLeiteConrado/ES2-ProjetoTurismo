@@ -2,7 +2,7 @@
 
 ## 📌 Visão geral
 
-O sistema segue uma arquitetura...
+O sistema segue uma arquitetura.......
 
 ---
 
@@ -17,9 +17,3 @@ O sistema segue uma arquitetura...
 
 ---
 
-## 🔄 Fluxo básico
-
-1. Definir
-2. Definir
-3. Definir
-4. Definir
