@@ -1,0 +1,30 @@
+name: Generate PlantUML Diagrams
+
+on:
+  push:
+    paths:
+      - 'docs/**.puml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v4
+
+      - name: Gerar SVG a partir dos arquivos .puml
+        uses: cloudbees/plantuml-github-action@master
+        with:
+          args: -tsvg docs/casos-de-uso.puml
+
+      - name: Commit e push do SVG gerado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/casos-de-uso.svg
+          git commit -m "ci: atualiza diagrama de casos de uso (SVG)" || echo "Nenhuma alteração para commitar"
+          git push
