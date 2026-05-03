@@ -17,10 +17,13 @@ jobs:
       - name: Checkout repositório
         uses: actions/checkout@v4
 
-      - name: Gerar SVG a partir dos arquivos .puml
-        uses: cloudbees/plantuml-github-action@master
-        with:
-          args: -tsvg docs/casos-de-uso.puml
+      - name: Instalar Java e PlantUML
+        run: |
+          sudo apt-get install -y default-jre graphviz
+          wget -q https://github.com/plantuml/plantuml/releases/download/v1.2024.6/plantuml-1.2024.6.jar -O plantuml.jar
+
+      - name: Gerar SVG
+        run: java -jar plantuml.jar -tsvg docs/casos-de-uso.puml
 
       - name: Commit e push do SVG gerado
         run: |
