@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repositório
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Instalar Java e PlantUML
         run: |
@@ -30,5 +32,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/casos-de-uso.svg
-          git commit -m "ci: atualiza diagrama de casos de uso (SVG)" || echo "Nenhuma alteração para commitar"
-          git push
+          git diff --staged --quiet || git commit -m "ci: atualiza diagrama de casos de uso (SVG)"
+          git push origin HEAD:main
