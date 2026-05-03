@@ -1,0 +1,163 @@
+@startuml Guia Turístico Digital - Casos de Uso
+
+' =============================================
+' Configurações visuais
+' =============================================
+skinparam backgroundColor #FAFAFA
+skinparam usecase {
+    BackgroundColor #EEF4FB
+    BorderColor #2C6FAC
+    FontColor #1A1A1A
+    FontSize 13
+}
+skinparam actor {
+    BackgroundColor #D6E8FA
+    BorderColor #1A5C99
+    FontColor #1A1A1A
+    FontSize 13
+    FontStyle bold
+}
+skinparam rectangle {
+    BackgroundColor #F0F7FF
+    BorderColor #2C6FAC
+    BorderThickness 2
+    FontSize 14
+    FontStyle bold
+    FontColor #1A3A5C
+}
+skinparam arrow {
+    Color #4A4A4A
+    FontSize 11
+}
+skinparam note {
+    BackgroundColor #FFFDE7
+    BorderColor #F9A825
+}
+
+left to right direction
+
+' =============================================
+' Atores
+' =============================================
+actor "Usuário\n(Turista)" as U
+actor "Administrador" as A
+actor "API de Mapas" as MapAPI <<external>>
+actor "API de Tradução" as TransAPI <<external>>
+actor "API de Localização" as LocAPI <<external>>
+
+' =============================================
+' Sistema
+' =============================================
+rectangle "🌍  Guia Turístico Digital" {
+
+    ' ---- Busca e Exibição ----
+    package "🔍 Busca e Exibição" {
+        usecase "UC01 - Pesquisar locais\npor nome, categoria\nou localização" as UC01
+        usecase "UC02 - Filtrar locais\npor preço ou categoria" as UC02
+        usecase "UC03 - Ver detalhes\ndo local" as UC03
+        usecase "UC04 - Ver status\ndo local (aberto/fechado)" as UC04
+        usecase "UC05 - Ver avaliações\ne comentários" as UC05
+        usecase "UC06 - Ver informações\npráticas do local" as UC06
+    }
+
+    ' ---- Roteirização ----
+    package "🗺️ Roteirização e Navegação" {
+        usecase "UC07 - Gerar rota\npersonalizada" as UC07
+        usecase "UC08 - Selecionar\nmodal de transporte" as UC08
+        usecase "UC09 - Visualizar rota\nem mapa" as UC09
+        usecase "UC10 - Ver roteiro\npronto (1, 2 ou 3 dias)" as UC10
+    }
+
+    ' ---- Recomendação ----
+    package "⭐ Personalização e Recomendação" {
+        usecase "UC11 - Receber\nrecomendações\npersonalizadas" as UC11
+        usecase "UC12 - Explorar\nhidden gems" as UC12
+        usecase "UC13 - Ver locais por\ncusto-benefício" as UC13
+        usecase "UC14 - Salvar\nfavoritos" as UC14
+        usecase "UC15 - Salvar\nroteiros" as UC15
+    }
+
+    ' ---- Internacionalização ----
+    package "🌐 Internacionalização" {
+        usecase "UC16 - Alterar idioma\nda interface" as UC16
+        usecase "UC17 - Traduzir\nconteúdo automaticamente" as UC17
+    }
+
+    ' ---- Administração ----
+    package "🔧 Administração" {
+        usecase "UC18 - Gerenciar\ncuradoria premium" as UC18
+        usecase "UC19 - Gerenciar\nlocais cadastrados" as UC19
+    }
+
+}
+
+' =============================================
+' Relacionamentos — Usuário
+' =============================================
+U --> UC01
+U --> UC02
+U --> UC03
+U --> UC04
+U --> UC05
+U --> UC06
+U --> UC07
+U --> UC08
+U --> UC09
+U --> UC10
+U --> UC11
+U --> UC12
+U --> UC13
+U --> UC14
+U --> UC15
+U --> UC16
+
+' =============================================
+' Relacionamentos — Administrador
+' =============================================
+A --> UC18
+A --> UC19
+
+' =============================================
+' Relacionamentos — include / extend
+' =============================================
+UC08 ..> UC07 : <<include>>
+UC09 ..> UC07 : <<include>>
+UC04 ..> UC03 : <<include>>
+UC05 ..> UC03 : <<include>>
+UC06 ..> UC03 : <<include>>
+UC17 ..> UC16 : <<include>>
+
+UC02 ..> UC01 : <<extend>>
+UC13 ..> UC11 : <<extend>>
+UC12 ..> UC11 : <<extend>>
+
+' =============================================
+' Relacionamentos — APIs externas
+' =============================================
+MapAPI --> UC09
+LocAPI --> UC08
+LocAPI --> UC07
+TransAPI --> UC17
+
+' =============================================
+' Notas explicativas
+' =============================================
+note right of UC07
+  Otimiza ordem dos locais
+  considerando distância,
+  tempo e perfil do usuário
+  (RF08, RF10)
+end note
+
+note right of UC11
+  Baseado no perfil:
+  econômico, prático ou premium
+  (RF13, RF14, RF15)
+end note
+
+note bottom of UC18
+  Curadoria especializada de
+  experiências premium (RF23)
+end note
+
+@enduml
