@@ -1,4 +1,4 @@
-<h1 align="center">🌍 NOME_DO_PROJETO</h1>
+<h1 align="center">🌍 PROJETO TURISMO</h1>
 <p align="center">
   Guia turístico digital para explorar cidades de forma inteligente
 </p>
