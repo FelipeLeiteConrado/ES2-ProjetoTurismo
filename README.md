@@ -21,6 +21,7 @@
 - [👥 Equipe](#-equipe)
 - [Casos de uso](./docs/casos-de-uso.md)
 - [📱 Protótipo](./docs/Protótipo.md)
+- [🎥 Vídeo] ().
 
 ---
 
@@ -81,6 +82,12 @@ A plataforma fornece:
 ## 📱 Protótipo
 
 👉 [Ver protótipo](./docs/Protótipo.md)
+
+---
+
+## 🎥 Vídeo
+
+👉 [Ver vídeo apresentação do projeto]()
 
 ---
 
