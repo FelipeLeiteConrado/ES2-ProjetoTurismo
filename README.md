@@ -19,9 +19,9 @@
 - [🧪 Requisitos (completo)](./docs/requisitos.md)
 - [🏗️ Arquitetura](./docs/arquitetura.md)
 - [👥 Equipe](#-equipe)
-- [Casos de uso](./docs/casos-de-uso.md)
+- [⛓️Casos de uso](./docs/casos-de-uso.md)
 - [📱 Protótipo](./docs/Protótipo.md)
-- 🎥 Vídeo ().
+- [🎥 Vídeo](./video)
 
 ---
 
