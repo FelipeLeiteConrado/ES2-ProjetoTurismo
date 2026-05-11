@@ -21,7 +21,7 @@
 - [👥 Equipe](#-equipe)
 - [⛓️Casos de uso](./docs/casos-de-uso.md)
 - [📱 Protótipo](./docs/Protótipo.md)
-- [🎥 Vídeo](./video)
+- [🎥 Vídeo](https://drive.google.com/file/d/12ueI1Eij6KavxDH-PZ0jyHEQFCRuOkSu/view?usp=sharing)
 
 ---
 
