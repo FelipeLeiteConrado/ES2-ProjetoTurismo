@@ -21,7 +21,7 @@
 - [👥 Equipe](#-equipe)
 - [⛓️Casos de uso](./docs/casos-de-uso.md)
 - [📱 Protótipo](./docs/Protótipo.md)
-- [🎥 Vídeo](https://drive.google.com/file/d/12ueI1Eij6KavxDH-PZ0jyHEQFCRuOkSu/view?usp=sharing)
+- [🎥 Vídeo]()
 
 ---
 
@@ -87,7 +87,7 @@ A plataforma fornece:
 
 ## 🎥 Vídeo
 
-👉 https://youtu.be/9tXArmUvB5o?si=DWlev5zxSPK5-FZp
+👉 
 
 ---
 
