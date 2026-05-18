@@ -20,8 +20,8 @@
 - [🏗️ Arquitetura](./docs/arquitetura.md)
 - [👥 Equipe](#-equipe)
 - [⛓️Casos de uso](./docs/casos-de-uso.md)
-- [📱 Protótipo](./docs/Protótipo.md)
-- [🎥 Vídeo]()
+- [📱 Protótipo](https://stitch.withgoogle.com/projects/11276094464331580312)
+- [🎥 Vídeo](https://youtu.be/6KYVL7eZB84?si=5hcXYb2uCzN6KqEm)
 
 ---
 
@@ -81,13 +81,13 @@ A plataforma fornece:
 
 ## 📱 Protótipo
 
-👉 [Ver protótipo](./docs/Protótipo.md)
+👉 [Ver protótipo](https://stitch.withgoogle.com/projects/11276094464331580312)
 
 ---
 
 ## 🎥 Vídeo
 
-👉 
+👉 https://youtu.be/6KYVL7eZB84?si=5hcXYb2uCzN6KqEm
 
 ---
 
