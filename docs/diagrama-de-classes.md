@@ -1,3 +1,3 @@
-# Casos de uso
+# Diagrama de Classes
 
-![Casos de Uso]()
+![Diagrama de Classes]()
