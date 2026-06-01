@@ -1,3 +1,3 @@
 # Diagrama de Classes
 
-![Diagrama de Classes](./docs/diagrama-de-classes.png)
+![Diagrama de Classes](.//diagrama-de-classes.png)
