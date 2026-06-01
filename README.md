@@ -21,8 +21,10 @@
 - [👥 Equipe](#-equipe)
 - [⛓️Casos de uso](./docs/casos-de-uso.md)
 - [🧩 Diagrama de Classes](./docs/diagrama-de-classes.md)
+- [🎲 Diagrama E/R](./docs/diagrama-er.md)
 - [📱 Protótipo](https://stitch.withgoogle.com/projects/11276094464331580312)
 - [🎥 Vídeo](https://youtu.be/6KYVL7eZB84?si=5hcXYb2uCzN6KqEm)
+- [🤳 Prova de Validação](./docs/prova-de-validacao.md)
 
 ---
 
