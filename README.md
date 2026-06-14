@@ -19,7 +19,7 @@
 - [🧪 Requisitos (completo)](./docs/requisitos.md)
 - [🏗️ Arquitetura](./docs/arquitetura.md)
 - [👥 Equipe](#-equipe)
-- [⛓️Casos de uso](./docs/casos-de-uso.md)
+- [⛓️Casos de uso](https://github.com/FelipeLeiteConrado/ES2-ProjetoTurismo/blob/6b10f23c18b555721ae7b638bddf8b846ce07e6a/docs/Guia%20Tur%C3%ADstico%20Digital%20-%20Casos%20de%20Uso.svg)
 - [🧩 Diagrama de Classes](./docs/diagrama-de-classes.md)
 - [🎲 Diagrama E/R](./docs/diagrama-er.md)
 - [📱 Protótipo](https://stitch.withgoogle.com/projects/14007669932576014666)
