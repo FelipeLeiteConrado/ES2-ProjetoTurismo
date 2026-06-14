@@ -39,125 +39,166 @@ left to right direction
 ' =============================================
 ' Atores
 ' =============================================
-actor "Usuário\n(Turista)" as U
-actor "Administrador" as A
-actor "API de Mapas" as MapAPI <<external>>
-actor "API de Tradução" as TransAPI <<external>>
-actor "API de Localização" as LocAPI <<external>>
+actor Traveler as T
+actor "City Authority" as CA
+actor Developer as DEV
+actor "API de Mapas" as MapAPI
+actor "API de Tradução" as TransAPI
+actor "API de Localização" as LocAPI
 
 ' =============================================
 ' Sistema
 ' =============================================
-rectangle "🌍  Guia Turístico Digital" {
+rectangle "🌍 Guia Turístico Digital" {
+
+    ' ---- Autenticação e Perfil ----
+    package "👤 Autenticação e Perfil" {
+        usecase "UC01 - Fazer login" as UC01
+        usecase "UC02 - Fazer logout" as UC02
+        usecase "UC03 - Atualizar perfil\ne preferências" as UC03
+        usecase "UC04 - Definir persona\nde viagem" as UC04
+    }
 
     ' ---- Busca e Exibição ----
     package "🔍 Busca e Exibição" {
-        usecase "UC01 - Pesquisar locais\npor nome, categoria\nou localização" as UC01
-        usecase "UC02 - Filtrar locais\npor preço ou categoria" as UC02
-        usecase "UC03 - Ver detalhes\ndo local" as UC03
-        usecase "UC04 - Ver status\ndo local (aberto/fechado)" as UC04
-        usecase "UC05 - Ver avaliações\ne comentários" as UC05
-        usecase "UC06 - Ver informações\npráticas do local" as UC06
+        usecase "UC05 - Pesquisar locais\npor nome, categoria\nou localização" as UC05
+        usecase "UC06 - Filtrar locais\npor preço ou categoria" as UC06
+        usecase "UC07 - Ver detalhes\ndo local" as UC07
+        usecase "UC08 - Ver status do local\n(aberto/fechado)" as UC08
+        usecase "UC09 - Ver avaliações\ne comentários" as UC09
+        usecase "UC10 - Ver informações\npráticas do local\n(segurança, cultura)" as UC10
+    }
+
+    ' ---- Avaliação ----
+    package "⭐ Avaliação" {
+        usecase "UC11 - Avaliar local\n(nota + comentário)" as UC11
     }
 
     ' ---- Roteirização ----
     package "🗺️ Roteirização e Navegação" {
-        usecase "UC07 - Gerar rota\npersonalizada" as UC07
-        usecase "UC08 - Selecionar\nmodal de transporte" as UC08
-        usecase "UC09 - Visualizar rota\nem mapa" as UC09
-        usecase "UC10 - Ver roteiro\npronto (1, 2 ou 3 dias)" as UC10
+        usecase "UC12 - Gerar rota\npersonalizada" as UC12
+        usecase "UC13 - Selecionar modal\nde transporte" as UC13
+        usecase "UC14 - Visualizar rota\nem mapa" as UC14
+        usecase "UC15 - Ver roteiro pronto\n(1, 2 ou 3 dias)" as UC15
     }
 
-    ' ---- Recomendação ----
-    package "⭐ Personalização e Recomendação" {
-        usecase "UC11 - Receber\nrecomendações\npersonalizadas" as UC11
-        usecase "UC12 - Explorar\nhidden gems" as UC12
-        usecase "UC13 - Ver locais por\ncusto-benefício" as UC13
-        usecase "UC14 - Salvar\nfavoritos" as UC14
-        usecase "UC15 - Salvar\nroteiros" as UC15
+    ' ---- Personalização e Recomendação ----
+    package "💡 Personalização e Recomendação" {
+        usecase "UC16 - Receber recomendações\npersonalizadas por perfil" as UC16
+        usecase "UC17 - Explorar\nhidden gems" as UC17
+        usecase "UC18 - Ver locais por\ncusto-benefício" as UC18
+        usecase "UC19 - Salvar favoritos" as UC19
+        usecase "UC20 - Salvar roteiros" as UC20
     }
 
     ' ---- Internacionalização ----
     package "🌐 Internacionalização" {
-        usecase "UC16 - Alterar idioma\nda interface" as UC16
-        usecase "UC17 - Traduzir\nconteúdo automaticamente" as UC17
+        usecase "UC21 - Alterar idioma\nda interface" as UC21
+        usecase "UC22 - Traduzir conteúdo\nautomaticamente" as UC22
     }
 
-    ' ---- Administração ----
-    package "🔧 Administração" {
-        usecase "UC18 - Gerenciar\ncuradoria premium" as UC18
-        usecase "UC19 - Gerenciar\nlocais cadastrados" as UC19
+    ' ---- Gestão de Locais ----
+    package "🔧 Gestão de Locais" {
+        usecase "UC23 - Cadastrar local\nna cidade" as UC23
+        usecase "UC24 - Gerenciar locais\nda cidade" as UC24
+        usecase "UC25 - Cadastrar local\nglobal" as UC25
+        usecase "UC26 - Gerenciar locais\nglobais" as UC26
+        usecase "UC27 - Gerenciar curadoria\npremium" as UC27
     }
 
 }
 
 ' =============================================
-' Relacionamentos — Usuário
+' Relacionamentos — Traveler
 ' =============================================
-U --> UC01
-U --> UC02
-U --> UC03
-U --> UC04
-U --> UC05
-U --> UC06
-U --> UC07
-U --> UC08
-U --> UC09
-U --> UC10
-U --> UC11
-U --> UC12
-U --> UC13
-U --> UC14
-U --> UC15
-U --> UC16
+T -- UC01
+T -- UC02
+T -- UC03
+T -- UC04
+T -- UC05
+T -- UC06
+T -- UC07
+T -- UC11
+T -- UC12
+T -- UC13
+T -- UC15
+T -- UC16
+T -- UC17
+T -- UC18
+T -- UC19
+T -- UC20
+T -- UC21
 
 ' =============================================
-' Relacionamentos — Administrador
+' Relacionamentos — City Authority
 ' =============================================
-A --> UC18
-A --> UC19
+CA -- UC01
+CA -- UC02
+CA -- UC23
+CA -- UC24
 
 ' =============================================
-' Relacionamentos — include / extend
+' Relacionamentos — Developer
 ' =============================================
-UC08 ..> UC07 : <<include>>
-UC09 ..> UC07 : <<include>>
-UC04 ..> UC03 : <<include>>
-UC05 ..> UC03 : <<include>>
-UC06 ..> UC03 : <<include>>
-UC17 ..> UC16 : <<include>>
+DEV -- UC01
+DEV -- UC02
+DEV -- UC25
+DEV -- UC26
+DEV -- UC27
 
-UC02 ..> UC01 : <<extend>>
-UC13 ..> UC11 : <<extend>>
-UC12 ..> UC11 : <<extend>>
+' =============================================
+' include / extend
+' =============================================
+UC06 .> UC05 : <<extend>>
+UC08 .> UC07 : <<include>>
+UC09 .> UC07 : <<include>>
+UC10 .> UC07 : <<include>>
+UC13 .> UC12 : <<include>>
+UC14 .> UC12 : <<include>>
+UC17 .> UC16 : <<extend>>
+UC18 .> UC16 : <<extend>>
+UC22 .> UC21 : <<include>>
 
 ' =============================================
 ' Relacionamentos — APIs externas
 ' =============================================
-MapAPI --> UC09
-LocAPI --> UC08
-LocAPI --> UC07
-TransAPI --> UC17
+MapAPI -- UC14
+LocAPI -- UC05
+LocAPI -- UC12
+TransAPI -- UC22
 
 ' =============================================
 ' Notas explicativas
 ' =============================================
-note right of UC07
-  Otimiza ordem dos locais
-  considerando distância,
-  tempo e perfil do usuário
-  (RF08, RF10)
+note right of UC12
+  Considera tempo disponível,
+  localização atual, orçamento
+  e modal de transporte
+  (RF08, RF10, RF11)
 end note
 
-note right of UC11
-  Baseado no perfil:
-  econômico, prático ou premium
-  (RF13, RF14, RF15)
+note right of UC16
+  Baseado em TravelPersona:
+  Adventurer, Practical ou
+  International (RF14)
 end note
 
-note bottom of UC18
+note right of UC04
+  Define TravelPersona do usuário
+  usada nas recomendações
+  e geração de roteiros
+end note
+
+note bottom of UC10
+  Inclui SafetyInfo e
+  CulturalInfo do local
+  (RF18, RF22)
+end note
+
+note bottom of UC27
   Curadoria especializada de
   experiências premium (RF23)
+  — exclusivo do Developer
 end note
 
 @enduml
