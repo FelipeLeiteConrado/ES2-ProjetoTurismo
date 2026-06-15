@@ -1,4 +1,4 @@
-<h1 align="center">🌍 PROJETO TURISMO</h1>
+<img width="224" height="224" alt="ClipWindowsGIF" src="https://github.com/user-attachments/assets/bcdea6c2-6999-4c5a-80ec-4d72c85f2e21" /><h1 align="center">🌍 PROJETO TURISMO</h1>
 <p align="center">
   Guia turístico digital para explorar cidades de forma inteligente
 </p>
@@ -25,6 +25,8 @@
 - [📱 Protótipo](https://stitch.withgoogle.com/projects/14007669932576014666)
 - [🎥 Vídeo](https://youtu.be/lhShKJnC--U?is=W-CEBYf_21S61K0T)
 - [🤳 Prova de Validação](./docs/prova-de-validacao.md)
+- [📑 Proposta](./docs/proposta.pdf)
+- [📄 Documento de Visão](./docs/visão.pdf)
 
 ---
 
