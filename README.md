@@ -1,4 +1,4 @@
-<img width="224" height="224" alt="ClipWindowsGIF" src="https://github.com/user-attachments/assets/bcdea6c2-6999-4c5a-80ec-4d72c85f2e21" /><h1 align="center">🌍 PROJETO TURISMO</h1>
+<h1 align="center">🌍 PROJETO TURISMO</h1>
 <p align="center">
   Guia turístico digital para explorar cidades de forma inteligente
 </p>
