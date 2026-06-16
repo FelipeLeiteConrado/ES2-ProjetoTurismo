@@ -23,7 +23,7 @@
 - [🧩 Diagrama de Classes](./docs/diagrama-de-classes.md)
 - [🎲 Diagrama E/R](./docs/diagrama-er.md)
 - [📱 Protótipo](https://stitch.withgoogle.com/projects/14007669932576014666)
-- [🎥 Vídeo](https://youtu.be/5AqBxXbv-fY?is=rsO1ZxTzwEuAMGvQ)
+- [🎥 Vídeo](https://youtu.be/T4Tf4_edC9A?is=ZzJdqZU6JIS6PCUq)
 - [🤳 Prova de Validação](./docs/prova-de-validacao.md)
 - [📑 Proposta](./docs/proposta.pdf)
 - [📄 Documento de Visão](./docs/visão.pdf)
